@@ -96,4 +96,4 @@ print("Reccorrido Preorder: ",ab.preorder())
 print("\nRecorrido Postorder: ",ab.postorder())
 
 print(ab.buisqueda(random.uniform(1,400000)))
-#print(ab.generaJson())
+print(ab.generaJson())
