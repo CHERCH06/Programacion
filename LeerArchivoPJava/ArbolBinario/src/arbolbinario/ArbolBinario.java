@@ -54,6 +54,7 @@ public class ArbolBinario extends Nodo{
         return data;
     }
 
+    
     private void preOrderRecursivo(Nodo nodo) {
         if(nodo != null){
             data.add(nodo.value);
