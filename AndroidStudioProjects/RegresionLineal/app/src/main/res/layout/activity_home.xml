@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tableLayout1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Home">
@@ -40,8 +41,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:textSize="18dp"
-                android:text="Método de mínimos cuadrados" />
+                android:text="Método de mínimos cuadrados"
+                android:textSize="18dp" />
 
             <Space
                 android:layout_width="match_parent"
@@ -51,8 +52,8 @@
                 android:id="@+id/textView4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingLeft="10dp"
                 android:gravity="center"
+                android:paddingLeft="10dp"
                 android:text="Ingresa el valor de la variable independiente X" />
 
             <EditText
@@ -61,8 +62,8 @@
                 android:layout_height="match_parent"
                 android:ems="10"
                 android:hint="Valor X"
-                android:paddingLeft="5dp"
-                android:inputType="numberSigned|numberDecimal" />
+                android:inputType="numberSigned|numberDecimal"
+                android:paddingLeft="5dp" />
 
             <Space
                 android:layout_width="match_parent"
@@ -72,8 +73,8 @@
                 android:id="@+id/textView5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingLeft="10dp"
                 android:gravity="center"
+                android:paddingLeft="10dp"
                 android:text="Ingresa el valor de la variable dependiente Y" />
 
             <EditText
@@ -81,8 +82,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Valor Y"
-                android:paddingLeft="5dp"
-                android:inputType="numberSigned|numberDecimal" />
+                android:inputType="numberSigned|numberDecimal"
+                android:paddingLeft="5dp" />
 
             <Space
                 android:layout_width="match_parent"
@@ -128,21 +129,23 @@
             <TableLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:id="@+id/taleLayout"
                 android:stretchColumns="2">
 
-                <TableRow>
+                <TableRow android:id="@+id/tabla">
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_column="1"
                         android:padding="3dip"
                         android:text="Valores X" />
+
                     <TextView
-                        android:text="Valores Y"
                         android:layout_width="match_parent"
                         android:layout_column="2"
                         android:layout_gravity="left"
-                        android:padding="3dip" />
+                        android:padding="3dip"
+                        android:text="Valores Y" />
                 </TableRow>
             </TableLayout>
         </LinearLayout>
