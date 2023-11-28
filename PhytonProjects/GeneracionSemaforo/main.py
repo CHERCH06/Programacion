@@ -82,12 +82,6 @@ class Genera:
                         self.listaAuto.append(linea)
                     archivo.close()  
 
-    def Encolar(self):
-        print(self.listaAuto)
-        
-
 genera = Genera()
 genera.Crear()
 genera.Procesar()
-#print(genera.lista)
-genera.Encolar()
