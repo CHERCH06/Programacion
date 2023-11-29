@@ -26,10 +26,12 @@ public class TableDynamic {
 
     public void addHeader(String[] header){
         this.headers = header;
+        createHeader();
     }
 
     public void addData(ArrayList<String[]> data){
         this.data = data;
+        createDataTable();
     }
 
     private void newRow(){
@@ -42,7 +44,7 @@ public class TableDynamic {
         lblCell.setTextSize(25);
     }
 
-    private void CreateHeader(){
+    private void createHeader(){
         indexCol = 0;
         newRow();
         while(indexCol<headers.length){
@@ -53,7 +55,7 @@ public class TableDynamic {
         tableRow.addView(tableRow);
     }
 
-    private void CreateDataTable (){
+    private void createDataTable (){
         String info;
         for(indexRow=0;indexRow<=headers.length;indexRow++){
             newRow();
@@ -69,7 +71,7 @@ public class TableDynamic {
     }
 
     private TableRow.LayoutParams newTableParams(){
-        TableRow.LayoutParams params = new ViewGroup.LayoutParams();
+        TableRow.LayoutParams params = new TableRow.LayoutParams();
         params.setMargins(1,1,1,1);
         params.weight=1;
         return params;
